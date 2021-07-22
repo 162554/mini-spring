@@ -17,6 +17,7 @@ public class BeanDefinitionAndBeanDefinitionRegistryTest {
 		beanFactory.registerBeanDefinition("helloService", beanDefinition);
 
 		HelloService helloService = (HelloService) beanFactory.getBean("helloService");
+		System.out.println("helloService.name = " + helloService.name);
 		helloService.sayHello();
 	}
 }
